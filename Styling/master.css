@@ -1,0 +1,282 @@
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 70px; 
+}
+
+/* ==========================================
+   NAVIGATION
+   ========================================== */
+.MyNav .nav-item a {
+  color: black !important;
+}
+.MyNav .navbar-nav > .nav-item > .nav-link {
+  position: relative;
+  color: black !important;
+  transition: color 0.3s ease;
+}
+.MyNav .navbar-nav > .nav-item > .nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0;
+  margin-bottom: 8px;
+  margin-left: 8px;
+  background-color: black;
+  transition: width 0.4s ease-in-out;
+}
+.MyNav .navbar-nav > .nav-item > .nav-link:hover::after,
+.MyNav .navbar-nav > .nav-item > .nav-link.active::after {
+  width: 70%;
+}
+.MyNav .nav-item {
+  word-spacing: 90px !important;
+}
+
+/* ==========================================
+   HERO / HEADER
+   ========================================== */
+header {
+  background-image: url(../Images/bg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: rgba(0, 0, 0, 0.708);
+  background-blend-mode: multiply;
+}
+.icon-circle {
+  width: 35px;
+  height: 35px;
+  border: 15px solid rgba(0, 0, 0, 0.655);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-decoration: none;
+}
+
+/* ==========================================
+   ABOUT
+   ========================================== */
+.myAbout .hover-btn:hover {
+  color: black !important;
+  background-color: white !important;
+}
+
+/* ==========================================
+   SERVICES
+   ========================================== */
+.service-card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  transition: background-color 1s ease, color 1s ease, transform 0.3s ease;
+}
+.service-card i {
+  transition: color 0.3s ease-in-out;
+}
+.service-card:hover .icon-container {
+  background-color: black !important;
+}
+.service-card:hover i {
+  color: white !important;
+}
+
+/* ==========================================
+   CAROUSEL INDICATORS
+   ========================================== */
+.carousel-indicators [data-bs-target] {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: rgb(136, 135, 135) !important;
+  transition: background-color 0.3s ease;
+}
+.carousel-indicators [data-bs-target]:hover {
+  background-color: #323232 !important;
+}
+
+/* ==========================================
+   TITLES / TABS
+   ========================================== */
+.border-dotted-box {
+  display: inline-block;
+  border: 4px dotted rgba(0, 0, 0, 0.1);
+  padding: 0rem 1rem;
+  height: 50px;
+}
+.custom-tabs .nav-link {
+  background-color: transparent !important;
+  border: none !important;
+  border-radius: 0 !important;
+  color: #555 !important;
+  font-weight: 500 !important;
+  border-bottom: 2px solid transparent !important;
+  padding: 0.5rem 1rem !important;
+}
+.custom-tabs .nav-link:hover {
+  color: black !important;
+}
+.custom-tabs .nav-link.active {
+  color: black !important;
+  border-bottom: 2px solid black !important;
+  font-weight: 600 !important;
+}
+
+/* ==========================================
+   PORTFOLIO WORK (IMAGE HOVER & OVERLAYS)
+   ========================================== */
+.image-hover {
+  position: relative !important;
+  overflow: hidden !important;
+}
+.image-hover img {
+  display: block !important;
+  width: 100% !important;
+  height: auto !important;
+  transition: all 0.3s ease !important;
+}
+.image-hover:hover img {
+  transform: scale(1.1); /* Smooth elegant zoom on image */
+}
+.image-hover .overlay {
+  position: absolute !important;
+  top: 15px !important;     /* Creates a neat inner border spacing effect */
+  left: 15px !important;
+  right: 15px !important;
+  bottom: 15px !important;
+  height: calc(100% - 30px) !important;
+  width: calc(100% - 30px) !important;
+  background-color: rgba(255, 255, 255, 0.9) !important;
+  opacity: 0 !important;
+  visibility: hidden !important;
+  transition: all 0.3s ease-in-out !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+.image-hover:hover .overlay {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+.image-hover .overlay-content {
+  color: #000 !important;
+  width: 100%;
+}
+.image-hover .icons {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  gap: 12px !important;
+  margin-top: 10px; /* Separates text from icons gracefully */
+}
+
+/* Explicitly scoped icon containers inside the portfolio */
+.image-hover .icon-container {
+  width: 40px !important;
+  height: 40px !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  border-radius: 50% !important;
+  background-color: #1c1c1c !important;
+  border: none !important;
+  transition: all 0.3s ease !important;
+}
+.image-hover .icon-container i {
+  font-size: 1.1rem !important;
+  color: #ffffff !important;
+  transition: all 0.3s ease !important;
+}
+.image-hover .icon-container:hover {
+  background-color: #ffffff !important;
+  border: 1px solid #1c1c1c !important;
+}
+.image-hover .icon-container:hover i {
+  color: #1c1c1c !important;
+}
+
+/* ==========================================
+   EXPERTISE / TEAM SECTION
+   ========================================== */
+.team-card {
+  position: relative;
+  overflow: hidden;
+}
+.image-wrapper {
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+}
+.image-wrapper img {
+  transition: transform 0.5s ease;
+  width: 100%;
+  height: 100%;
+}
+.image-wrapper:hover img {
+  transform: scale(1.15);
+}
+.team-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotateY(90deg); 
+  background-color: rgba(255, 255, 255, 0.95);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  opacity: 0;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  backface-visibility: hidden;
+  border-radius: 8px;
+  width: 85%; 
+  height: 85%; 
+}
+.image-wrapper:hover .team-overlay {
+  transform: translate(-50%, -50%) rotateY(0deg); 
+  opacity: 1;
+}
+
+/* Standardized standalone icons */
+.icon-container {
+  width: 45px;
+  height: 45px;
+  border: 1px solid #1c1c1c;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+/* ==========================================
+   CONTACT SECTION
+   ========================================== */
+#Contact button:hover {
+  background-color: white !important;
+  color: black !important;
+  border: 1px solid black !important;
+}
+#Contact .contact-info .icon-container {
+  transition: all 0.3s ease;
+}
+#Contact .contact-info .icon-container:hover {
+  background-color: black !important;
+  border-color: black !important;
+}
+#Contact .contact-info .icon-container:hover i {
+  color: white !important;
+}
+
+/* ==========================================
+   RESPONSIVE MEDIA QUERIES
+   ========================================== */
+@media (max-width: 768px) {
+  .MyNav .navbar-nav > .nav-item > .nav-link:hover::after,
+  .MyNav .navbar-nav > .nav-item > .nav-link.active::after {
+    width: 10%;
+  }
+}

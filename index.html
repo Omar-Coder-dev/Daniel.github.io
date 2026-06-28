@@ -1,0 +1,995 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="Images/favicon.ico" type="image/x=icon" />
+    <link rel="stylesheet" href="fontawesome-free-6.7.2-web/css/all.min.css" />
+    <link rel="stylesheet" href="Styling/bootstrap.min.css" />
+    <link rel="stylesheet" href="Styling/master.css" />
+    <title>Daniels</title>
+  </head>
+  <body
+    data-bs-spy="scroll"
+    data-bs-target=".navbar"
+    data-bs-offset="50"
+    class="scrollspy-example"
+  >
+    <nav class="navbar fixed-top navbar-expand-lg p-1 MyNav bg-white">
+      <div class="container">
+        <a class="navbar-brand fw-bold fs-4 text-dark ms-lg-5" href="#"
+          >Daniels</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#Home"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item ms-5">
+              <a class="nav-link" href="#About">about</a>
+            </li>
+            <li class="nav-item ms-5">
+              <a class="nav-link" href="#Services">Services</a>
+            </li>
+            <li class="nav-item ms-5">
+              <a class="nav-link" href="#Work">Work</a>
+            </li>
+            <li class="nav-item ms-5">
+              <a class="nav-link" href="#Clients">Clients</a>
+            </li>
+            <li class="nav-item ms-5">
+              <a class="nav-link" href="#Team">Team</a>
+            </li>
+            <li class="nav-item ms-5">
+              <a class="nav-link" href="#Contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header
+      id="Home"
+      class="py-5 min-vh-100 d-flex justify-content-center align-items-center"
+    >
+      <div class="container text-center text-white fw-medium">
+        <h1 class="display-4 fw-bolder">Hello</h1>
+        <h1 class="display-1 fw-lighter">
+          I Am <span class="display-1 fw-light" id="element"></span>
+        </h1>
+
+        <div class="mt-5 social-icons d-flex justify-content-center">
+          <!-- You can leave Facebook/Twitter as # or remove them if you don't use them professionally -->
+          <!-- Replace these two with your real profile URLs -->
+          <a
+            href="https://www.linkedin.com/in/omar-h-103921291/"
+            target="_blank"
+            class="icon-circle rounded-circle mx-1"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+          <a
+            href="https://github.com/Omar-Coder-dev"
+            target="_blank"
+            class="icon-circle rounded-circle mx-1"
+            ><i class="fab fa-github"></i
+          ></a>
+        </div>
+      </div>
+    </header>
+
+    <section id="About" class="py-5 myAbout">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-5 position-relative mb-5 mb-lg-0">
+            <div
+              class="position-absolute top-0 start-0 w-50 h-100 rounded-3"
+              style="border: 8px dotted rgba(0, 0, 0, 0.1); z-index: 0"
+            ></div>
+
+            <!-- Responsive Image -->
+            <div class="position-relative text-center">
+              <img
+                src="Images/hero.jpg"
+                alt="Profile"
+                class="img-fluid rounded-3 shadow-lg mt-n4 ms-n4 mt-md-n5 ms-md-n5"
+                style="border: 10px solid white; z-index: 1; max-width: 85%"
+              />
+            </div>
+          </div>
+
+          <div class="col-lg-7 ps-lg-5">
+            <h2 class="display-5 fw-bold mb-3">About Me.</h2>
+            <p class="h4 mb-4 text-muted">FULL-STACK WEB DEVELOPER</p>
+
+            <p class="mb-4">
+              I am a passionate Full-Stack Web Developer specializing in
+              building high-performance, responsive web applications. With
+              expertise spanning modern frontend frameworks like React and
+              robust backend engineering with Node.js and NestJS, I focus on
+              turning complex problems into elegant user experiences.
+            </p>
+
+            <div class="mb-4">
+              <!-- Web Design Bar -->
+              <div class="mb-3">
+                <div
+                  class="progress position-relative"
+                  role="progressbar"
+                  aria-label="Web Design skills"
+                  aria-valuenow="95"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                  style="height: 30px"
+                >
+                  <div class="progress-bar bg-dark" style="width: 95%"></div>
+                  <div
+                    class="position-absolute w-100 h-100 d-flex justify-content-between align-items-center px-3"
+                  >
+                    <span class="fs-6 text-white">UI / UX Design</span>
+                    <span class="fs-6 text-white">95%</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Frontend / React Bar (Fixed the text percent mismatch) -->
+              <div class="mb-3">
+                <div
+                  class="progress position-relative"
+                  role="progressbar"
+                  aria-label="Frontend development skills"
+                  aria-valuenow="90"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                  style="height: 30px"
+                >
+                  <div class="progress-bar bg-dark" style="width: 90%"></div>
+                  <div
+                    class="position-absolute w-100 h-100 d-flex justify-content-between align-items-center px-3"
+                  >
+                    <span class="fs-6 text-white">React & Frontend</span>
+                    <span class="fs-6 text-white">90%</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Backend Engineering Bar -->
+              <div class="mb-3">
+                <div
+                  class="progress position-relative"
+                  role="progressbar"
+                  aria-label="Backend development skills"
+                  aria-valuenow="85"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                  style="height: 30px"
+                >
+                  <div class="progress-bar bg-dark" style="width: 85%"></div>
+                  <div
+                    class="position-absolute w-100 h-100 d-flex justify-content-between align-items-center px-3"
+                  >
+                    <span class="fs-6 text-white">Backend Engineering</span>
+                    <span class="fs-6 text-white">85%</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="d-flex gap-3">
+              <!-- Set this link to # or an actual resume file asset when you have it -->
+              <a
+                href="./Omar_Resume.pdf"
+                download="Omar_Resume.pdf"
+                class="btn btn-dark px-4 d-inline-flex align-items-center justify-content-center"
+                >Download CV</a
+              >
+              <!-- Hooked this up to smooth scroll straight down to your contact section -->
+              <a
+                href="#Contact"
+                class="btn btn-outline-dark px-4 d-inline-flex align-items-center justify-content-center"
+              >
+                Contact Me
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="Services" class="services-section py-5">
+      <div class="container">
+        <div class="section-header text-center mb-5">
+          <div class="text-center">
+            <div class="d-inline-block border-dotted-box">
+              <h2 class="display-4 fw-bold m-0">Services.</h2>
+            </div>
+          </div>
+          <div class="divider mx-auto my-4"></div>
+        </div>
+
+        <div class="row g-4">
+          <!-- Frontend Development -->
+          <div class="col-md-4">
+            <div class="service-card h-100 p-4 text-center">
+              <div class="service-icon mb-4">
+                <div
+                  class="icon-container rounded-circle border mx-auto d-flex align-items-center justify-content-center"
+                  style="
+                    width: 70px;
+                    height: 70px;
+                    background-color: rgba(204, 207, 210, 0.655);
+                  "
+                >
+                  <i class="fa-solid fa-laptop fs-2 text-dark"></i>
+                </div>
+              </div>
+              <h3 class="mb-3">Frontend Dev</h3>
+              <p>
+                Building modern, interactive user interfaces using modern
+                systems like React, ensuring smooth client-side performance and
+                modular layout structures.
+              </p>
+            </div>
+          </div>
+
+          <!-- Backend Architecture -->
+          <div class="col-md-4">
+            <div class="service-card h-100 p-4 text-center">
+              <div class="service-icon mb-4">
+                <div
+                  class="icon-container rounded-circle border mx-auto d-flex align-items-center justify-content-center"
+                  style="
+                    width: 70px;
+                    height: 70px;
+                    background-color: rgba(204, 207, 210, 0.655);
+                  "
+                >
+                  <i class="fa-solid fa-server fs-2 text-dark"></i>
+                </div>
+              </div>
+              <h3 class="mb-3">Backend APIs</h3>
+              <p>
+                Developing fast, reliable server-side microservices and RESTful
+                APIs using tools like Node.js, Express, and NestJS framework
+                architectures.
+              </p>
+            </div>
+          </div>
+
+          <!-- Full-Stack Integration -->
+          <div class="col-md-4">
+            <div class="service-card h-100 p-4 text-center">
+              <div class="service-icon mb-4">
+                <div
+                  class="icon-container rounded-circle border mx-auto d-flex align-items-center justify-content-center"
+                  style="
+                    width: 70px;
+                    height: 70px;
+                    background-color: rgba(204, 207, 210, 0.655);
+                  "
+                >
+                  <i class="fa-solid fa-layer-group fs-2 text-dark"></i>
+                </div>
+              </div>
+              <h3 class="mb-3">Full-Stack Apps</h3>
+              <p>
+                Connecting server logic with modern frontends seamlessly,
+                managing client state management, data parsing, and end-to-end
+                user flows.
+              </p>
+            </div>
+          </div>
+
+          <!-- Responsive Web Design -->
+          <div class="col-md-4">
+            <div class="service-card h-100 p-4 text-center">
+              <div class="service-icon mb-4">
+                <div
+                  class="icon-container rounded-circle border mx-auto d-flex align-items-center justify-content-center"
+                  style="
+                    width: 70px;
+                    height: 70px;
+                    background-color: rgba(204, 207, 210, 0.655);
+                  "
+                >
+                  <i
+                    class="fa-solid fa-mobile-screen-button fs-2 text-dark"
+                  ></i>
+                </div>
+              </div>
+              <h3 class="mb-3">Responsive Design</h3>
+              <p>
+                Crafting interfaces that look stunning on any screen resolution,
+                optimized flawlessly for mobile layouts, tablets, and desktop
+                displays.
+              </p>
+            </div>
+          </div>
+
+          <!-- Database Engineering -->
+          <div class="col-md-4">
+            <div class="service-card h-100 p-4 text-center">
+              <div class="service-icon mb-4">
+                <div
+                  class="icon-container rounded-circle border mx-auto d-flex align-items-center justify-content-center"
+                  style="
+                    width: 70px;
+                    height: 70px;
+                    background-color: rgba(204, 207, 210, 0.655);
+                  "
+                >
+                  <i class="fa-solid fa-database fs-2 text-dark"></i>
+                </div>
+              </div>
+              <h3 class="mb-3">Database Management</h3>
+              <p>
+                Structuring relational databases and efficient entity models to
+                ensure low latency data queries, data protection, and
+                consistency.
+              </p>
+            </div>
+          </div>
+
+          <!-- Clean Coding Practices -->
+          <div class="col-md-4">
+            <div class="service-card h-100 p-4 text-center">
+              <div class="service-icon mb-4">
+                <div
+                  class="icon-container rounded-circle border mx-auto d-flex align-items-center justify-content-center"
+                  style="
+                    width: 70px;
+                    height: 70px;
+                    background-color: rgba(204, 207, 210, 0.655);
+                  "
+                >
+                  <i class="fa-solid fa-code fs-2 text-dark"></i>
+                </div>
+              </div>
+              <h3 class="mb-3">Clean Code</h3>
+              <p>
+                Writing scalable, semantic, and well-documented codebase
+                infrastructures that follow industry best practices for
+                long-term project maintenance.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="Work" class="py-5">
+      <div class="container">
+        <div class="text-center mb-4">
+          <div class="d-inline-block border-dotted-box">
+            <h2 class="display-4 fw-bold m-0">Portfolio.</h2>
+          </div>
+        </div>
+
+        <ul
+          class="nav justify-content-center custom-tabs mb-4"
+          id="pills-tab"
+          role="tablist"
+        >
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link active"
+              id="pills-all-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#pills-all"
+              type="button"
+              role="tab"
+              aria-controls="pills-all"
+              aria-selected="true"
+            >
+              All
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="pills-frontend-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#pills-frontend"
+              type="button"
+              role="tab"
+              aria-controls="pills-frontend"
+              aria-selected="false"
+            >
+              Frontend & Full-Stack
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="pills-backend-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#pills-backend"
+              type="button"
+              role="tab"
+              aria-controls="pills-backend"
+              aria-selected="false"
+            >
+              Backend APIs
+            </button>
+          </li>
+        </ul>
+
+        <div class="tab-content" id="pills-tabContent">
+          <div
+            class="tab-pane fade show active"
+            id="pills-all"
+            role="tabpanel"
+            aria-labelledby="pills-all-tab"
+            tabindex="0"
+          >
+            <div class="row g-4">
+              <div class="col-md-4">
+                <div class="image-hover">
+                  <img
+                    src="./Images/portfolio/1.jpg"
+                    class="img-fluid"
+                    alt="E-Commerce Application"
+                  />
+                  <div class="overlay">
+                    <div class="overlay-content">
+                      <h4 class="text-center">Full-Stack E-Commerce</h4>
+                      <div class="icons text-center">
+                        <div
+                          class="icon-container rounded-circle border mx-auto d-flex align-items-center justify-content-center"
+                        >
+                          <i class="fa-solid fa-eye fs-4 py-2 text-dark"></i>
+                        </div>
+                        <div
+                          class="icon-container rounded-circle border mx-auto d-flex align-items-center justify-content-center"
+                        >
+                          <i
+                            class="fa-solid fa-search-plus fs-4 py-2 text-dark"
+                          ></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="image-hover">
+                  <img
+                    src="./Images/portfolio/2.jpg"
+                    class="img-fluid"
+                    alt="RESTful API Backend Architecture"
+                  />
+                  <div class="overlay">
+                    <div class="overlay-content">
+                      <h4 class="text-center">NestJS Microservices</h4>
+                      <div class="icons text-center">
+                        <div
+                          class="icon-container rounded-circle border mx-auto d-flex align-items-center justify-content-center"
+                        >
+                          <i class="fa-solid fa-eye fs-4 py-2 text-dark"></i>
+                        </div>
+                        <div
+                          class="icon-container rounded-circle border mx-auto d-flex align-items-center justify-content-center"
+                        >
+                          <i
+                            class="fa-solid fa-search-plus fs-4 py-2 text-dark"
+                          ></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="image-hover">
+                  <img
+                    src="./Images/portfolio/3.jpg"
+                    class="img-fluid"
+                    alt="React Web Dashboard App"
+                  />
+                  <div class="overlay">
+                    <div class="overlay-content">
+                      <h4 class="text-center">React Analytics App</h4>
+                      <div class="icons text-center">
+                        <div
+                          class="icon-container rounded-circle border mx-auto d-flex align-items-center justify-content-center"
+                        >
+                          <i class="fa-solid fa-eye fs-4 py-2 text-dark"></i>
+                        </div>
+                        <div
+                          class="icon-container rounded-circle border mx-auto d-flex align-items-center justify-content-center"
+                        >
+                          <i
+                            class="fa-solid fa-search-plus fs-4 py-2 text-dark"
+                          ></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="tab-pane fade"
+            id="pills-frontend"
+            role="tabpanel"
+            aria-labelledby="pills-frontend-tab"
+            tabindex="0"
+          >
+            <div class="row g-4">
+              <div class="col-md-6">
+                <div class="image-hover">
+                  <img
+                    src="./Images/portfolio/1.jpg"
+                    class="img-fluid"
+                    alt="E-Commerce App"
+                  />
+                  <div class="overlay">
+                    <div class="overlay-content">
+                      <h4 class="text-center">Full-Stack E-Commerce</h4>
+                      <div class="icons text-center">
+                        <div
+                          class="icon-container rounded-circle border mx-auto d-flex align-items-center justify-content-center"
+                        >
+                          <i class="fa-solid fa-eye fs-4 py-2 text-dark"></i>
+                        </div>
+                        <div
+                          class="icon-container rounded-circle border mx-auto d-flex align-items-center justify-content-center"
+                        >
+                          <i
+                            class="fa-solid fa-search-plus fs-4 py-2 text-dark"
+                          ></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="image-hover">
+                  <img
+                    src="./Images/portfolio/3.jpg"
+                    class="img-fluid"
+                    alt="React Dashboard"
+                  />
+                  <div class="overlay">
+                    <div class="overlay-content">
+                      <h4 class="text-center">React Analytics App</h4>
+                      <div class="icons text-center">
+                        <div
+                          class="icon-container rounded-circle border mx-auto d-flex align-items-center justify-content-center"
+                        >
+                          <i class="fa-solid fa-eye fs-4 py-2 text-dark"></i>
+                        </div>
+                        <div
+                          class="icon-container rounded-circle border mx-auto d-flex align-items-center justify-content-center"
+                        >
+                          <i
+                            class="fa-solid fa-search-plus fs-4 py-2 text-dark"
+                          ></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="tab-pane fade"
+            id="pills-backend"
+            role="tabpanel"
+            aria-labelledby="pills-backend-tab"
+            tabindex="0"
+          >
+            <div class="row g-4">
+              <div class="col-md-6">
+                <div class="image-hover">
+                  <img
+                    src="./Images/portfolio/2.jpg"
+                    class="img-fluid"
+                    alt="NestJS System API"
+                  />
+                  <div class="overlay">
+                    <div class="overlay-content">
+                      <h4 class="text-center">NestJS Microservices</h4>
+                      <div class="icons text-center">
+                        <div
+                          class="icon-container rounded-circle border mx-auto d-flex align-items-center justify-content-center"
+                        >
+                          <i class="fa-solid fa-eye fs-4 py-2 text-dark"></i>
+                        </div>
+                        <div
+                          class="icon-container rounded-circle border mx-auto d-flex align-items-center justify-content-center"
+                        >
+                          <i
+                            class="fa-solid fa-search-plus fs-4 py-2 text-dark"
+                          ></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="Clients" class="py-5 bg-white text-dark">
+      <div class="container text-center">
+        <div class="text-center">
+          <div class="d-inline-block border-dotted-box">
+            <h2 class="display-4 fw-bold m-0">Testimonials.</h2>
+          </div>
+        </div>
+
+        <div id="workCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner py-5">
+            <div class="carousel-item active text-center">
+              <div class="d-flex justify-content-center">
+                <img
+                  src="Images/1_New1.jpg"
+                  class="rounded-circle"
+                  style="
+                    width: 130px;
+                    height: 130px;
+                    object-fit: cover;
+                    border: 3px solid #f8f9fa;
+                  "
+                  alt="Client Reviewer"
+                />
+              </div>
+              <p class="mt-4 w-75 mx-auto fs-5 italic">
+                "Outstanding work on our web platform! The landing page is
+                incredibly fast, perfectly responsive on mobile devices, and the
+                backend communication handles high traffic flawlessly."
+              </p>
+              <h4 class="fw-bold mt-3">Sarah Jenkins</h4>
+              <span class="text-muted">E-Commerce Store Owner</span>
+            </div>
+
+            <div class="carousel-item text-center">
+              <div class="d-flex justify-content-center">
+                <img
+                  src="Images/1_New1.jpg"
+                  class="rounded-circle"
+                  style="
+                    width: 130px;
+                    height: 130px;
+                    object-fit: cover;
+                    border: 3px solid #f8f9fa;
+                  "
+                  alt="Client Reviewer"
+                />
+              </div>
+              <p class="mt-4 w-75 mx-auto fs-5 italic">
+                "Delivered an incredibly clean codebase for our RESTful API
+                project. Very organized, highly responsive to feedback during
+                development, and integrated the entire frontend smoothly."
+              </p>
+              <h4 class="fw-bold mt-3">David Miller</h4>
+              <span class="text-muted">Tech Startup Founder</span>
+            </div>
+
+            <div class="carousel-item text-center">
+              <div class="d-flex justify-content-center">
+                <img
+                  src="Images/1_New1.jpg"
+                  class="rounded-circle"
+                  style="
+                    width: 130px;
+                    height: 130px;
+                    object-fit: cover;
+                    border: 3px solid #f8f9fa;
+                  "
+                  alt="Client Reviewer"
+                />
+              </div>
+              <p class="mt-4 w-75 mx-auto fs-5 italic">
+                "Exceptional eye for detail. The UI design transitions smoothly,
+                and the custom backend structure was built exactly to our
+                requirements. Will definitely collaborate again!"
+              </p>
+              <h4 class="fw-bold mt-3">Elena Rostova</h4>
+              <span class="text-muted">Product Manager</span>
+            </div>
+          </div>
+
+          <div class="carousel-indicators mt-3 gap-2 position-relative">
+            <button
+              type="button"
+              data-bs-target="#workCarousel"
+              data-bs-slide-to="0"
+              class="active bg-dark"
+              aria-current="true"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#workCarousel"
+              data-bs-slide-to="1"
+              class="bg-dark"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#workCarousel"
+              data-bs-slide-to="2"
+              class="bg-dark"
+            ></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="Team" class="py-5 bg-light text-dark">
+      <div class="container">
+        <div class="text-center mb-5">
+          <div class="d-inline-block border-dotted-box">
+            <h2 class="display-4 fw-bold m-0">Expertise.</h2>
+          </div>
+        </div>
+
+        <div class="row g-4 justify-content-center">
+          <div class="col-md-4">
+            <div class="card border-0 shadow-sm h-100 team-card">
+              <div class="image-wrapper position-relative overflow-hidden">
+                <img
+                  src="./Images/1.jpg"
+                  class="card-img-top"
+                  alt="Frontend Engineering"
+                />
+                <div
+                  class="team-overlay d-flex align-items-center justify-content-center gap-2"
+                >
+                  <div class="icon-container">
+                    <i class="fab fa-react fs-5"></i>
+                  </div>
+                  <div class="icon-container">
+                    <i class="fab fa-js-square fs-5"></i>
+                  </div>
+                  <div class="icon-container">
+                    <i class="fab fa-github fs-5"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body text-center p-4 bg-dark">
+                <h3 class="card-title mb-1 text-white">Frontend Dev</h3>
+                <p
+                  class="card-text fs-6 fw-bold text-uppercase text-info tracking-wider m-0"
+                >
+                  React & Modern UIs
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card border-0 shadow-sm h-100 team-card">
+              <div class="image-wrapper position-relative overflow-hidden">
+                <img
+                  src="./Images/2.jpg"
+                  class="card-img-top"
+                  alt="Backend Architecture"
+                />
+                <div
+                  class="team-overlay d-flex align-items-center justify-content-center gap-2"
+                >
+                  <div class="icon-container">
+                    <i class="fab fa-node-js fs-5"></i>
+                  </div>
+                  <div class="icon-container">
+                    <i class="fas fa-server fs-5"></i>
+                  </div>
+                  <div class="icon-container">
+                    <i class="fab fa-github fs-5"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body text-center p-4 bg-dark">
+                <h3 class="card-title mb-1 text-white">Backend APIs</h3>
+                <p
+                  class="card-text fs-6 fw-bold text-uppercase text-info tracking-wider m-0"
+                >
+                  Node.js & Express / NestJS
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card border-0 shadow-sm h-100 team-card">
+              <div class="image-wrapper position-relative overflow-hidden">
+                <img
+                  src="./Images/1.jpg"
+                  class="card-img-top"
+                  alt="Full Stack Integration"
+                />
+                <div
+                  class="team-overlay d-flex align-items-center justify-content-center gap-2"
+                >
+                  <div class="icon-container">
+                    <i class="fas fa-database fs-5"></i>
+                  </div>
+                  <div class="icon-container">
+                    <i class="fas fa-code-branch fs-5"></i>
+                  </div>
+                  <div class="icon-container">
+                    <i class="fab fa-github fs-5"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body text-center p-4 bg-dark">
+                <h3 class="card-title mb-1 text-white">
+                  Full-Stack Integration
+                </h3>
+                <p
+                  class="card-text fs-6 fw-bold text-uppercase text-info tracking-wider m-0"
+                >
+                  End-to-End Applications
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="Contact" class="py-5 bg-white text-dark">
+      <div class="container">
+        <div class="text-center mb-5">
+          <div class="d-inline-block border-dotted-box">
+            <h2 class="display-4 fw-bold m-0">Contact Me.</h2>
+          </div>
+        </div>
+
+        <div class="contact-info mb-5 text-center">
+          <div class="row justify-content-center gx-5 gy-4">
+            <div class="col-md-4">
+              <div class="d-flex flex-column align-items-center p-3">
+                <div
+                  class="icon-container rounded-circle border mx-auto d-flex align-items-center justify-content-center mb-3"
+                  style="
+                    width: 70px;
+                    height: 70px;
+                    background-color: rgba(204, 207, 210, 0.35);
+                  "
+                >
+                  <i class="fa-solid fa-map fs-4 text-dark"></i>
+                </div>
+                <h5 class="fw-bold mb-2">LOCATION</h5>
+                <p class="text-muted">Cairo, Egypt</p>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="d-flex flex-column align-items-center p-3">
+                <div
+                  class="icon-container rounded-circle border mx-auto d-flex align-items-center justify-content-center mb-3"
+                  style="
+                    width: 70px;
+                    height: 70px;
+                    background-color: rgba(204, 207, 210, 0.35);
+                  "
+                >
+                  <i class="fa-solid fa-envelope fs-4 text-dark"></i>
+                </div>
+                <h5 class="fw-bold mb-2">EMAIL</h5>
+                <p class="text-muted">omar.hafez.hassan@gmail.com</p>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="d-flex flex-column align-items-center p-3">
+                <div
+                  class="icon-container rounded-circle border mx-auto d-flex align-items-center justify-content-center mb-3"
+                  style="
+                    width: 70px;
+                    height: 70px;
+                    background-color: rgba(204, 207, 210, 0.35);
+                  "
+                >
+                  <i class="fa-solid fa-phone fs-4 text-dark"></i>
+                </div>
+                <h5 class="fw-bold mb-2">PHONE</h5>
+                <p class="text-muted">+20 102 517 8918</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-lg-10">
+            <form action="https://api.web3forms.com/submit" method="POST">
+              <input
+                type="hidden"
+                name="access_key"
+                value="79880f99-85e7-4f8b-b8f3-f853a7d72ef6"
+              />
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <input
+                    type="text"
+                    name="name"
+                    class="form-control form-control-lg bg-light border-0 fs-6"
+                    placeholder="Your Name"
+                    required
+                  />
+                </div>
+
+                <div class="col-md-6">
+                  <input
+                    type="email"
+                    name="email"
+                    class="form-control form-control-lg bg-light border-0 fs-6"
+                    placeholder="Your Email"
+                    required
+                  />
+                </div>
+
+                <div class="col-12 mt-3">
+                  <textarea
+                    name="message"
+                    class="form-control form-control-lg bg-light border-0 fs-6"
+                    rows="5"
+                    placeholder="Your Message"
+                    required
+                  ></textarea>
+                </div>
+
+                <div class="col-12 mt-4 text-center">
+                  <button
+                    type="submit"
+                    class="btn btn-dark btn-lg px-5 py-3 fs-6 fw-bold tracking-wider text-uppercase"
+                  >
+                    Send Message
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer
+      class="py-4 bg-dark text-white-50 text-center border-top border-secondary"
+    >
+      <div class="container">
+        <p class="m-0 small">
+          Copyright &copy; 2026 &bull; Designed & Built by
+          <strong>Omar Hafez</strong> &bull; All Rights Reserved.
+        </p>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed("#element", {
+        strings: ["Omar Hafez", "Designer", "Developer"],
+        typeSpeed: 50,
+        backspeed: 50,
+        loop: true,
+      });
+    </script>
+
+    <script src="JS/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
